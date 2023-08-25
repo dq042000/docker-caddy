@@ -25,7 +25,7 @@
 # https://caddyserver.com/docs/caddyfile
 #
 (reverseproxyheaders) {
-    #header_up X-Real-IP {remote}
+    # header_up X-Real-IP {remote}
     header_up X-Forwarded-Ssl on
     header_up Host {host}
     header_up X-Real-IP {remote}
@@ -37,3 +37,7 @@
     header_down Strict-Transport-Security max-age=31536000
 }
 
+# example.com {
+#     reverse_proxy localhost:9001 localhost:9002
+#     tls test@example.com
+# }
