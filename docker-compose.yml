@@ -14,6 +14,7 @@ services:
       - ./site:/srv
       - ./caddy_data:/data
       - ./caddy_config:/config
+    network_mode: host
     networks:
       - caddy
 volumes:
