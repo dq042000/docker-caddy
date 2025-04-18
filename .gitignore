@@ -1,1 +1,8 @@
 .history
+Caddyfile
+docker-compose.yml
+caddy_config/*
+caddy_data/*
+
+!caddy_config/.gitkeep
+!caddy_data/.gitkeep
